@@ -55,7 +55,7 @@ public class Order {
     public Double total() {
         double sum = 0;
         for (OrderItem c : items) {
-            sum += c.getPrice();
+            sum += c.subTotal(); // Usando subTotal de OrderItem //
         }
         return sum;
     }
