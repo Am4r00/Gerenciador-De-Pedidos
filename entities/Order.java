@@ -61,7 +61,7 @@ public class Order {
     }
 
     @Override
-    public String toString() {
+    public String toString() { // Usando String Builder para facilitar a concatenação // 
         StringBuilder sb = new StringBuilder();
         sb.append("Order moment: ");
         sb.append(sdf.format(moment) + "\n");
